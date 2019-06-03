@@ -3,6 +3,31 @@
   --start_bg-font-size: 28px;
 }
 
+@font-face {
+font-family: "Montserrat Bold";
+src: url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+font-family: "Montserrat";
+src: url("fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+font-family: "Logo";
+src: url("fonts/tt0205m.ttf");
+}
+
+@font-face {
+font-family: "Futura Bold";
+src: url("fonts/Futura Bold font.ttf");
+}
+
+@font-face {
+font-family: "Futura Light";
+src: url("fonts/Futura Light font.ttf");
+}
+
 html,body
 {
   width: 100%;
@@ -96,7 +121,7 @@ input:focus {
 {
   margin-left: 10vw ;
   padding-top: 8vw ;
-  font-family: Futura XBlkCnIt BT;
+  font-family: Logo;
   color: white;
   font-size: 48px;
 }
@@ -106,7 +131,7 @@ input:focus {
   position: relative;
   margin-left: 10vw ;
   padding-top: 6vw ;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat Bold", sans-serif;
   color: white;
   font-size: 64px;
   font-weight: bold;
@@ -115,7 +140,7 @@ input:focus {
 
 .headingBold
 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat Bold", sans-serif;
   color: white;
   font-size: 64px;
   font-weight: bold;
@@ -125,9 +150,9 @@ input:focus {
 {
   margin-left: 10vw ;
   margin-top: 10vh ;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: var(--start_bg-font-size);
-  font-weight: 550;
+  font-weight: 600;
 }
 
 .start_bg a:link, a:visited
@@ -156,14 +181,14 @@ input:focus {
 {
   color: #ffffff;
   padding-top: 80px;
-  font-family: Futura BdCn BT, sans-serif;
+  font-family: Futura Bold, sans-serif;
   font-size: 32px;
 }
 
 .description
 {
   color: #ffffff;
-  font-family: Futura LtCn BT;
+  font-family: Futura Light;
   font-size: 34px;
 }
 
