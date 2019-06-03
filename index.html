@@ -1,166 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Tweek</title>
-  <link rel="icon" href="assets/img/logo1.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Smart jersey that monitors player performance in game using Inertial Motion Capture technologies.">
-  <meta name="keywords" content="tweek, smart, jersey, inertial, motion, capture, game, monitor, performance">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
+  <head>
+    <title>Tweek</title>
+    <link rel="icon" href="assets/img/logo1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Smart jersey that monitors player performance in game
+    and provides analysis for coaches and scouts.">
+    <meta name="keywords" content="tweek, smart, jersey, inertial, motion, capture, game, monitor,
+    performance, scouting, analysis">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+  </head>
 
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo1.png" alt="Tweek">
-    <p></p>
-  </a>
-  <p class="device-notification--message">We must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+  <body>
+    <div class="start_bg col" style="background-image: url(assets/img/StartBG.png);">
+      <p class="logo">tweek</p>
+      <p class="headingBanner text-left">Athlete performance<br>profiling and scouting </p>
+      <a href="#details">Details</a>
+    </div>
 
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo1.png" alt="Tweek">
-            <p></p>
-          </a>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Why Us</span></li>
-            <li><span>Partners</span></li>
-            <li><span>Team</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Athlete<br>Performance Profiling<br>and Scouting</h1>
-                <br>
-                <br>
-                <br>
-                <button class="cta">Contact Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/bg2.jpg" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Movement Monitoring Sportswear</h3>
-                  <p>Sportswear with electronics embedded in them to monitor movement of the player wearing it.</p>
-                </a>
-                <a href="#0">
-                  <h3>Performance Profiling from Movement</h3>
-                  <p>Automatic performance profiling from our algorithms from the movement data.</p>
-                </a>
-                <a href="#0">
-                  <h3>Scouting Platform</h3>
-                  <p>Performance data available to scouts looking for talent across the globe.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Why Us?</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/performance1.jpg" alt="Performance">
-                      </div>
-                      <p class="slider--item-title">Automated Performance Score</p>
-                      <p class="slider--item-description">Wear the suit, play the game, check your stats</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/tweek1.jpg" alt="Tweek Yourself">
-                      </div>
-                      <p class="slider--item-title">Tweak Yourself</p>
-                      <p class="slider--item-description">Find focus points to work on your performance</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/scout1.jpg" alt="Get Scouted">
-                      </div>
-                      <p class="slider--item-title">Get Scouted</p>
-                      <p class="slider--item-description">Performance shared with scouts on our platform</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="partner--banner">
-                <br>
-                <br>
-                <h2>Our<br>potential<br>partners</h2>
+    <section id="section10" class="demo">
+      <a href="#details"><span></span></a>
+    </section>
 
-              </div>
-              <div class="partner--options">
-                <a href="#0">
-                  <h3>All Indian Football Federation</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <br>
-                <br>
-                <h2>Team</h2>
-                
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Anant Sharma<br>anant3110@gmail.com</h3>
-                </a>
-                <a href="#0">
-                  <h3>Shwetank Shrey<br>shwetankshrey@gmail.com</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul>
+    <div class="viewportSize container topPadding">
+      <a id="details"></a>
+      <div class="row">
+        <div class="col-xl-4 col-md-6 col-12 text-center">
+          <img src="assets/img/Performance_Profiling.png" alt="" width="80%">
+          <p class="heading">Movement Monitoring Sportswear</p>
+          <p class="description">Sportswear with electronics embedded to monitor movement of the player wearing it.</p>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 text-center">
+          <img src="assets/img/Performance_Profiling.png" alt="" width="80%">
+          <p class="heading">Performance Profiling</p>
+          <p class="description">Automatic performance profiling from our algorithms from the movement data.</p>
+        </div>
+        <div class="col-xl-4 col-md-6 col-12 text-center">
+          <img src="assets/img/Scouting.png" alt="" width="100%">
+          <p class="heading">Scouting Platform</p>
+          <p class="description">Performance data available to scouts looking for talent across the globe.</p>
+        </div>
       </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
-</body>
+      <div class="col topPadding text-center" style="padding-bottom: 130px;">
+        <p class="headingBold text-center">Coming Soon</p>
+        <img src="assets/img/screens.png" alt="" width="65%">
+      </div>
+
+        <p class="heading text-center">Subscribe to us for further updates</p>
+      <div class="col">
+        <form id="subscribeForm">
+          <div class="input">
+            <input type="email" class="button" id="email" name="email" placeholder="Email">
+            <input type="submit" class="button" id="submit" value="Subscribe">
+          </div>
+        </form>
+        <p class="description text-center thanksPopUp">Thanks for subscribing.</p>
+      </div>
+
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
