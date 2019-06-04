@@ -212,6 +212,7 @@ input:focus {
   width: 65%;
 }
 
+
 @media (max-width: 575.98px)
 {
   #comingSoonImg
@@ -220,7 +221,7 @@ input:focus {
   }
 
   #email {
-    width: 55%;
+    width: 45%;
     background: #FDFCFB;
     font-family: inherit;
     color: #737373;
@@ -236,7 +237,7 @@ input:focus {
     padding-top: 6vw ;
     font-family: "Montserrat Bold", sans-serif;
     color: white;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
   }
 
