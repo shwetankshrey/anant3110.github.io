@@ -72,7 +72,7 @@ form {
 #submit {
   width: 25%;
   height: 46px;
-  background: #568bbb;
+  background: #dd1563;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
@@ -85,14 +85,14 @@ form {
 
 
 #submit:hover {
-  background: #4FACFE;
+  background: #ff1872;
 }
 
 
 input:focus {
   outline: none;
-  outline: 2px solid #568bbb;
-  box-shadow: 0 0 2px #568bbb;
+  outline: 2px solid #dd1563;
+  box-shadow: 0 0 2px #dd1563;
 }
 
 /* Success Check */
@@ -116,7 +116,7 @@ input:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/StartBG.jpg);
+  background-image: url(../img/StartBG1.jpg);
 }
 
 .logo
@@ -160,7 +160,7 @@ input:focus {
 .start_bg a:link, a:visited
 {
   border-radius: calc(var(--start_bg-font-size)*2);
-  background-image: linear-gradient(to left,#00F2FE,#4FACFE);
+  background-image: linear-gradient(to left,#ff1872,#b41683);
   text-decoration: none;
   color: white;
   text-align: center;
@@ -171,7 +171,7 @@ input:focus {
 .start_bg a:hover
 {
   border-radius: calc(var(--start_bg-font-size)*2);
-  background-image: linear-gradient(to left,#00F2FE,#4FACFE);
+  background-image: linear-gradient(to left,#ff1872,#b41683);
   text-decoration: none;
   color: white;
   text-align: center;
